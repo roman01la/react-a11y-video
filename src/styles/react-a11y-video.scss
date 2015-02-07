@@ -1,0 +1,40 @@
+.react-a11y-video {
+
+    $colorCtrl: #242424;
+    $colorCtrlInteract: lighten($colorCtrl, 20%);
+    $colorWhite: #fafafa;
+
+    .control-panel,
+    .playback-controls {
+        display: flex;
+    }
+
+    .btn,
+    .playback-time {
+        margin: 2px;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font: normal 12px sans-serif;
+        line-height: 1rem;
+    }
+
+    .btn {
+        border: none;
+        background: $colorCtrl;
+        color: $colorWhite;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover,
+        &:focus {
+            background: $colorCtrlInteract;
+        }
+    }
+
+    .playback-time {
+        border: 1px solid $colorCtrl;
+        background: $colorWhite;
+    }
+}

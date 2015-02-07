@@ -1,0 +1,43 @@
+{
+  "name": "react-a11y-video",
+  "version": "1.0.0",
+  "description": "Accessible HTML5 Video player React component",
+  "homepage": "https://github.com/roman01la/react-a11y-video",
+  "main": "src/react-a11y-video.jsx",
+  "scripts": {
+    "start": "node dev-server.js"
+  },
+  "author": {
+    "name": "Roman Liutikov",
+    "email": "roman01la@romanliutikov.com",
+    "url": "https://romanliutikov.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roman01la/react-a11y-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roman01la/react-a11y-video/issues"
+  },
+  "keywords": [
+    "reactjs",
+    "a11y",
+    "react-component"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "6to5-core": "^3.4.1",
+    "6to5-loader": "^3.0.0",
+    "6to5-runtime": "^3.4.1",
+    "autoprefixer-loader": "^1.1.0",
+    "core-js": "^0.4.10",
+    "css-loader": "^0.9.1",
+    "react": "^0.12.2",
+    "react-a11y": "0.0.5",
+    "react-hot-loader": "^1.1.4",
+    "sass-loader": "^0.4.0-beta.1",
+    "style-loader": "^0.8.3",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
