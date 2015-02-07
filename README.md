@@ -12,6 +12,17 @@ This is WIP, more features will come soon.
 
 ## Usage
 
-Check `examples/main.jsx`.
+Check `[examples/main.jsx]`(https://github.com/roman01la/react-a11y-video/blob/master/example/main.jsx).
 
 Basically pass video **source urls** and player **dimensions** as props to `A11yPlayer` component.
+
+## Todo
+
+- Volume controls
+- Progress controls
+- Playback rate controls
+- Fullscreen mode
+- Subtitles support
+- Invert colors and grayscale modes for both UI and video content
+- Show transcript option
+- Responsiveness
