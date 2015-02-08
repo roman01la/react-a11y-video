@@ -14,6 +14,8 @@ This is WIP, more features will come soon.
 
 Check [`examples/main.jsx`](https://github.com/roman01la/react-a11y-video/blob/master/example/main.jsx).
 
+`import A11yPlayer from 'react-a11y-video';`
+
 Basically pass video **source urls** and player **dimensions** as props to `A11yPlayer` component.
 
 ## Todo
