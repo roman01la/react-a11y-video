@@ -5,6 +5,8 @@ import ProgressControls from './progress-controls';
 import PlaybackTime from './playback-time';
 import FullscreenControls from './fullscreen-controls';
 
+import styles from './styles/react-a11y-video';
+
 let ControlPanel = React.createClass({
 
     getDefaultProps() {
@@ -43,7 +45,7 @@ let ControlPanel = React.createClass({
 
         return (
 
-            <div className='control-panel'>
+            <div className='control-panel' style={styles.controlPanel()}>
 
                 <PlaybackControls onPlay={this._play}
                                   onPause={this._pause}

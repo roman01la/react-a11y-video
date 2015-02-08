@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './styles/react-a11y-video';
+
 let Button = React.createClass({
 
     render() {
@@ -7,7 +9,8 @@ let Button = React.createClass({
         return (
 
             <button className='btn'
-                    onClick={this.props.onInteract}>
+                    onClick={this.props.onInteract}
+                    style={styles.btn()}>
 
                 {this.props.children}
             </button>

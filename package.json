@@ -6,7 +6,7 @@
   "main": "build/react-a11y-video.js",
   "scripts": {
     "start": "node dev-server.js",
-    "prepublish": "mkdir -p build && 6to5 src/ -d build/ && find build/ -name '*.jsx' -exec sh -c 'mv \"$1\" \"${1%.jsx}.js\"' _ {} \\;"
+    "prepublish": "mkdir -p build && 6to5 src/ -d build/ && find build -type f \\( -iname \\*.jsx -o -iname \\*.es6 \\) -exec sh -c 'mv \"$1\" \"${1%.jsx}.js\"' _ {} \\;"
   },
   "author": {
     "name": "Roman Liutikov",
@@ -41,10 +41,7 @@
     "6to5-runtime": "^3.4.1",
     "autoprefixer-loader": "^1.1.0",
     "core-js": "^0.4.10",
-    "css-loader": "^0.9.1",
     "react-hot-loader": "^1.1.4",
-    "sass-loader": "^0.4.0-beta.1",
-    "style-loader": "^0.8.3",
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0"
   }
