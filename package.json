@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Accessible HTML5 Video player React component",
   "homepage": "https://github.com/roman01la/react-a11y-video",
-  "main": "src/react-a11y-video.jsx",
+  "main": "build/react-a11y-video.js",
   "scripts": {
     "start": "node dev-server.js"
   },
@@ -20,9 +20,14 @@
     "url": "https://github.com/roman01la/react-a11y-video/issues"
   },
   "keywords": [
+    "react",
     "reactjs",
     "a11y",
-    "react-component"
+    "react-component",
+    "video",
+    "player",
+    "accessible",
+    "html5"
   ],
   "license": "MIT",
   "devDependencies": {
