@@ -1,0 +1,103 @@
+.react-a11y-video {
+
+    $colorCtrl: #242424;
+    $colorWhite: #fafafa;
+    $colorCtrlInteract: lighten($colorCtrl, 20%);
+    $colorCtrlSecondary: lighten($colorCtrl, 60%);
+
+    background: $colorWhite;
+    border: 1px solid $colorCtrl;
+    padding: 5px;
+    border-radius: 2px;
+
+    video {
+        border-radius: 2px;
+    }
+
+    .control-panel {
+        flex-direction: column;
+    }
+
+    .control-panel,
+    .playback-controls,
+    .row {
+        display: flex;
+    }
+
+    .row {
+
+        &.top {
+            justify-content: space-between;
+        }
+        &.bottom {
+            padding: 5px 0 0;
+        }
+    }
+
+    .btn,
+    .playback-time {
+        margin: 2px;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font: normal 12px sans-serif;
+        line-height: 1rem;
+    }
+
+    .btn {
+        border: none;
+        background: $colorCtrl;
+        color: $colorWhite;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover,
+        &:focus {
+            background: $colorCtrlInteract;
+        }
+    }
+
+    .volume-controls {
+        display: flex;
+        align-items: center;
+
+        input[type='range'] {
+            -webkit-appearance: none;
+            height: 6px;
+            width: 100px;
+            background: $colorCtrlSecondary;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 10px;
+                width: 6px;
+                background: $colorCtrl;
+            }
+        }
+    }
+
+    .progress-controls,
+    .fullscreen-controls {
+        flex: 1;
+    }
+
+    .progress-controls progress {
+        -webkit-appearance: none;
+        border: none;
+        width: 100%;
+        height: 10px;
+
+        &::-webkit-progress-bar {
+            background: $colorCtrlSecondary;
+        }
+        &::-webkit-progress-value {
+            background: $colorCtrl;
+        }
+    }
+
+    .fullscreen-controls {
+        max-width: 40px;
+        margin: 0 0 0 10px;
+    }
+}

@@ -3,8 +3,6 @@ import React from 'react';
 import PlayPause from './play-pause';
 import Navigate from './navigate';
 
-import styles from './styles/react-a11y-video';
-
 let PlaybackControls = React.createClass({
 
     getInitialState() {
@@ -37,7 +35,7 @@ let PlaybackControls = React.createClass({
 
         return (
 
-            <div className='playback-controls' style={styles.playbackControls()}>
+            <div className='playback-controls'>
 
                 <Navigate onNavigate={this.props.onRepeat}>
 

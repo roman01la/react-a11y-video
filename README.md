@@ -26,8 +26,6 @@ Go to [localhost:300/example/](http://localhost:300/example/)
 
 ## Todo
 
-- Volume controls
-- Progress controls
 - Playback rate controls
 - Fullscreen mode
 - Subtitles support

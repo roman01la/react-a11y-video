@@ -1,7 +1,5 @@
 import React from 'react';
 
-import styles from './styles/react-a11y-video';
-
 let PlaybackTime = React.createClass({
 
     getInitialState() {
@@ -39,7 +37,7 @@ let PlaybackTime = React.createClass({
 
         return (
 
-            <div className='playback-time' style={styles.playbackTime()}>
+            <div className='playback-time'>
 
                 {this.state.currTime}
             </div>

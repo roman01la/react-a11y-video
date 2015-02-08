@@ -1,11 +1,10 @@
 import React from 'react';
 
 import PlaybackControls from './playback-controls';
-import ProgressControls from './progress-controls';
+import VolumeControls from './volume-controls';
 import PlaybackTime from './playback-time';
 import FullscreenControls from './fullscreen-controls';
-
-import styles from './styles/react-a11y-video';
+import ProgressControls from './progress-controls';
 
 let ControlPanel = React.createClass({
 
@@ -45,16 +44,22 @@ let ControlPanel = React.createClass({
 
         return (
 
-            <div className='control-panel' style={styles.controlPanel()}>
+            <div className='control-panel'>
 
-                <PlaybackControls onPlay={this._play}
-                                  onPause={this._pause}
-                                  onNavigate={this._navigate}
-                                  onRepeat={this._repeat} />
+                <div className='row top'>
+                    <PlaybackControls onPlay={this._play}
+                                      onPause={this._pause}
+                                      onNavigate={this._navigate}
+                                      onRepeat={this._repeat} />
 
-                <ProgressControls />
-                <PlaybackTime api={this.props.api} />
-                <FullscreenControls />
+                    <VolumeControls api={this.props.api} />
+                    <PlaybackTime api={this.props.api} />
+                </div>
+
+                <div className='row bottom'>
+                    <ProgressControls api={this.props.api} />
+                    <FullscreenControls />
+                </div>
 
             </div>
         );

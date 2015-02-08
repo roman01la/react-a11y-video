@@ -17,7 +17,8 @@ module.exports = {
     ],
     module: {
         loaders: [
-            { test: /\.(jsx|es6)$/, exclude: /node_modules/, loaders: ['react-hot', '6to5-loader?optional=selfContained'] }
+            { test: /\.(jsx|es6)$/, exclude: /node_modules/, loaders: ['react-hot', '6to5-loader?optional=selfContained'] },
+            { test: /\.scss$/, loaders: ['react-hot', 'style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader'] }
         ]
     },
     output: {
@@ -26,7 +27,7 @@ module.exports = {
         publicPath: '/'
     },
     resolve: {
-        extensions: ['', '.js', '.jsx', '.es6']
+        extensions: ['', '.js', '.jsx', '.es6', '.scss']
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
