@@ -1,6 +1,6 @@
 {
   "name": "react-a11y-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Accessible HTML5 Video player React component",
   "homepage": "https://github.com/roman01la/react-a11y-video",
   "main": "build/react-a11y-video.js",
