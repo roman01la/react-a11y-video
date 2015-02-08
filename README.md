@@ -22,7 +22,7 @@ Basically pass video **source urls** and player **dimensions** as props to `A11y
 
 `npm install && npm start`
 
-Go to [http://localhost:300/example/](localhost:300/example/).
+Go to [localhost:300/example/](http://localhost:300/example/)
 
 ## Todo
 
