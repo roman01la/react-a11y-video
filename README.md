@@ -18,6 +18,12 @@ Check [`examples/main.jsx`](https://github.com/roman01la/react-a11y-video/blob/m
 
 Basically pass video **source urls** and player **dimensions** as props to `A11yPlayer` component.
 
+## Development
+
+`npm install && npm start`
+
+Go to [http://localhost:300/example/](localhost:300/example/).
+
 ## Todo
 
 - Volume controls
