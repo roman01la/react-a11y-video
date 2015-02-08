@@ -1,6 +1,6 @@
 {
   "name": "react-a11y-video",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Accessible HTML5 Video player React component",
   "homepage": "https://github.com/roman01la/react-a11y-video",
   "main": "build/react-a11y-video.js",
@@ -31,6 +31,9 @@
     "html5"
   ],
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^0.12.2"
+  },
   "devDependencies": {
     "6to5": "^3.4.1",
     "6to5-core": "^3.4.1",
@@ -39,7 +42,6 @@
     "autoprefixer-loader": "^1.1.0",
     "core-js": "^0.4.10",
     "css-loader": "^0.9.1",
-    "react": "^0.12.2",
     "react-hot-loader": "^1.1.4",
     "sass-loader": "^0.4.0-beta.1",
     "style-loader": "^0.8.3",
