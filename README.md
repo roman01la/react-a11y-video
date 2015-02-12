@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-a11y-video.svg)](http://badge.fury.io/js/react-a11y-video)
+
 # React A11y HTML5 Video Player
 
 Accessible HTML5 Video player React component.
