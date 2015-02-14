@@ -58,7 +58,7 @@ let ControlPanel = React.createClass({
 
                 <div className='row bottom'>
                     <ProgressControls api={this.props.api} />
-                    <FullscreenControls />
+                    <FullscreenControls api={this.props.api} />
                 </div>
 
             </div>

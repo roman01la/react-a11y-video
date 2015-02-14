@@ -3,6 +3,8 @@ import React from 'react';
 import Viewport from './viewport';
 import ControlPanel from './control-panel';
 
+require('./styles/react-a11y-video');
+
 let A11yPlayer = React.createClass({
 
     getInitialState() {

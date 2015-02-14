@@ -28,8 +28,8 @@ Go to [localhost:300/example/](http://localhost:300/example/)
 
 ## Todo
 
+- Better keyboard accessibility in fullscreen mode
 - Playback rate controls
-- Fullscreen mode
 - Subtitles support
 - Invert colors and grayscale modes for both UI and video content
 - Show transcript option

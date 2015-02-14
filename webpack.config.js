@@ -18,7 +18,8 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.(jsx|es6)$/, exclude: /node_modules/, loaders: ['react-hot', '6to5-loader?optional=selfContained'] },
-            { test: /\.scss$/, loaders: ['react-hot', 'style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader'] }
+            { test: /\.scss$/, loaders: ['react-hot', 'style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader'] },
+            { test: /\.svg$/, loaders: ['url-loader?limit=100000&mimetype=image/svg+xml'] }
         ]
     },
     output: {
