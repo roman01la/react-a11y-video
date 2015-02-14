@@ -6,9 +6,11 @@ Accessible HTML5 Video player React component.
 
 ## WIP
 
-This is WIP, more features will come soon.
+This is WIP, check [Todo](#todo). More features will come soon.
 
 ## Installation
+
+This component requires `webpack`. Check [`webpack.config.js`](./webpack.config.js) for build configuration.
 
 `npm install react-a11y-video`
 
