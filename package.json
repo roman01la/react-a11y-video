@@ -1,12 +1,12 @@
 {
   "name": "react-a11y-video",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Accessible HTML5 Video player React component",
   "homepage": "https://github.com/roman01la/react-a11y-video",
   "main": "build/react-a11y-video.js",
   "scripts": {
     "start": "node dev-server.js",
-    "prepublish": "mkdir -p build && 6to5 src/ -d build/ && find build -type f \\( -iname \\*.jsx -o -iname \\*.es6 \\) -exec sh -c 'mv \"$1\" \"${1%.jsx}.js\"' _ {} \\;"
+    "prepublish": "mkdir -p build && 6to5 src/ -d build/ && find build -type f \\( -iname \\*.jsx -o -iname \\*.es6 \\) -exec sh -c 'mv \"$1\" \"${1%.jsx}.js\"' _ {} \\; && cp -r src/img build/ && cp -r src/styles build/"
   },
   "author": {
     "name": "Roman Liutikov",
