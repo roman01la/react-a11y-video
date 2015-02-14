@@ -6,16 +6,28 @@ let PlaybackTime = React.createClass({
 
         return {
 
-            currTime: '00:00'
+            currTime: '00:00',
+            duration: 0
         };
     },
 
     componentWillReceiveProps (nextProps) {
 
-        this.props.api !== nextProps.api &&
+        if (this.props.api !== nextProps.api) {
 
             nextProps.api
                 .addEventListener('timeupdate', this._onTimeUpdate, false);
+
+            let check = setInterval(() => {
+
+                if (nextProps.api.duration > 0) {
+
+                    this.setState({ duration: nextProps.api.duration });
+                    clearInterval(check);
+                }
+
+            }, 1000);
+        }
     },
 
     _onTimeUpdate() {
@@ -37,7 +49,9 @@ let PlaybackTime = React.createClass({
 
         return (
 
-            <div className='playback-time'>
+            <div className='playback-time'
+                 tabIndex='0'
+                 aria-label={'Video duration is ' + Math.round(this.state.duration) + ' seconds.'}>
 
                 {this.state.currTime}
             </div>

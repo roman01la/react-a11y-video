@@ -39,6 +39,7 @@ let VolumeControls = React.createClass({
                 <input type='range'
                        min='0'
                        max='10'
+                       aria-label='Volume level'
                        value={this.state.level}
                        onChange={this._onChange} />
 
