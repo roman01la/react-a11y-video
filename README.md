@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/react-a11y-video.svg)](http://badge.fury.io/js/react-a11y-video)
+![](https://img.shields.io/badge/maintainer%20needed-!-red.svg)
 
 # React A11y HTML5 Video Player
 
